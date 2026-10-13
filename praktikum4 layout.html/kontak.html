@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </nav>
+      
+      <section id="wrapper">
+        <section id="main" style="width: 100%;">
+          <div class="row">
+            <h2>Hubungi Kami</h2>
+            <p>Silakan isi formulir di bawah ini untuk mengirimkan pesan atau pertanyaan kepada kami.</p>
+            
+            <!-- Formulir Kontak -->
+            <form action="#" method="POST" class="contact-form">
+              <div class="form-group">
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required style="width: 100%; padding: 8px; margin-top: 5px;" />
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required style="width: 100%; padding: 8px; margin-top: 5px;" />
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="message">Message (Pesan):</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan Anda di sini..." required style="width: 100%; padding: 8px; margin-top: 5px;"></textarea>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-default" style="padding: 10px 20px; background-color: #3e73e6; color: white; border: none; cursor: pointer;">Kirim Pesan</button>
+            </form>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
